@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+<!-- 
+    <head>
+        <css src="jquery/fileUploader/css/jquery.fileupload-ui.css"/>
+    </head>
+    <update handle="editor"/>
+ -->
+    <body>
+        <referenceContainer name="left">
+            <block class="Emizentech\StoreLocator\Block\Adminhtml\StoreLocator\Edit\Tabs" name="storelocator_storelocator_edit_tabs">
+                <block class="Emizentech\StoreLocator\Block\Adminhtml\StoreLocator\Edit\Tab\Main" name="storelocator_storelocator_edit_tab_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">storelocator_storelocator_edit_tab_main</argument>
+                </action>
+            </block>
+        </referenceContainer>
+         <referenceContainer name="content">
+            <block class="Emizentech\StoreLocator\Block\Adminhtml\StoreLocator\Edit" name="storelocator_storelocator_edit"/>
+        </referenceContainer>
+    </body>
+</page>

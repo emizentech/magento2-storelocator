@@ -1,0 +1,24 @@
+/**
+ * @author Amit Samsukha <amit@emizentech.com>
+ */
+ .store-map{
+	width: 100%;
+	height: 80%;
+	min-height: 300px;
+	position: relative;
+	overflow: hidden;
+	clear: both;
+}
+.field .control{
+	text-align:center;
+}
+.field .control input,.field .control select,.field .control button{
+    width: 20%;
+    margin:20px;
+    display: inline-block;
+}
+
+#locationSelect{
+	clear:both;
+	margin:20px 0;
+}

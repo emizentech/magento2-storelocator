@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Emizentech_StoreLocator::emizentech" title="Emizen Tech" module="Emizentech_StoreLocator" sortOrder="5" resource="Emizentech_StoreLocator::storelocator"/>
+        <add id="Emizentech_StoreLocator::storelocator" title="Store Locator" module="Emizentech_StoreLocator" sortOrder="1" parent="Emizentech_StoreLocator::emizentech" action="storelocator/storelocator" resource="Emizentech_StoreLocator::storelocator"/>
+    </menu>
+</config>

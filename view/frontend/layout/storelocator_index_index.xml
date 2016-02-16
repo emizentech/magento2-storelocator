@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+     <head>
+		<css src="Emizentech_StoreLocator::css/storeLocator.css" />
+		<title>Store Locator</title>
+	 </head>
+     <body>
+        <attribute name="class" value="storelocator-list"/>
+        <referenceContainer name="content">
+            <block class="Emizentech\StoreLocator\Block\StoreLocator" name="storelocator" template="Emizentech_StoreLocator::storelocator.phtml" cacheable="false">
+            </block>
+        </referenceContainer>
+        <referenceContainer name="before.body.end" remove="true"  />
+    </body>
+</page>
