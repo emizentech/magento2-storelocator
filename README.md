@@ -46,7 +46,7 @@ to Enable this module you need to follow these steps:
 <ul>
 <li>
 <strong>Enable the Module</strong>
-<pre>bin/magento module:enable Emizentech_Storelocator</pre></li>
+<pre>bin/magento module:enable Emizentech_StoreLocator</pre></li>
 <li>
 <strong>Run Upgrade Setup</strong>
 <pre>bin/magento setup:upgrade</pre></li>
