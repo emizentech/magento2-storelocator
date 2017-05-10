@@ -30,17 +30,17 @@ After that, need to install this module as follows:
 <h2> Mannual Installation Instructions</h2>
 go to Magento2Project root dir 
 create following Directory Structure :<br/>
-<strong>/Magento2Project/app/code/Emizentech/Storelocator</strong>
+<strong>/Magento2Project/app/code/Emizentech/StoreLocator</strong>
 you can also create by following command:
 <pre>
 cd /Magento2Project
 mkdir app/code/Emizentech
-mkdir app/code/Emizentech/Storelocator
+mkdir app/code/Emizentech/StoreLocator
 </pre>
 
 
 
-<h3> Enable Emizentech/Storelocator Module</h3>
+<h3> Enable Emizentech/StoreLocator Module</h3>
 to Enable this module you need to follow these steps:
 
 <ul>
