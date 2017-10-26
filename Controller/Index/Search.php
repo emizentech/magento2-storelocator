@@ -39,12 +39,9 @@ class Search extends \Magento\Framework\App\Action\Action
 		$parnode = $dom->appendChild($node);
 
 		
-		$query = sprintf("SELECT address, title , latitude , longitude , ( 3959 * acos( cos( radians('%s') ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians('%s') ) + sin( radians('%s') ) * sin( radians( latitude ) ) ) ) AS distance FROM ".$storeTable." where is_active = 1  HAVING distance < '%s' ORDER BY distance LIMIT 0 , 20 ",
-		  ($center_lat),
-		  ($center_lng),
-		  ($center_lat),
-		  ($radius));
-		$result = $connection->fetchAll($query);
+		$query = "SELECT address, title , latitude , longitude , ( 3959 * acos( cos( radians(?) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(?) ) + sin( radians(?) ) * sin( radians( latitude ) ) ) ) AS distance FROM ".$storeTable." where is_active = 1  HAVING distance < ? ORDER BY distance LIMIT 0 , 20 ";
+		$bind = [$center_lat, $center_lng, $center_lat, $radius];
+		$result = $connection->fetchAll($query, $bind);
 		if (!$result) {
 		  die("Invalid query: " . mysql_error());
 		}
